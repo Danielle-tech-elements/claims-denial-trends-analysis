@@ -11,3 +11,5 @@ Claim denials create significant financial and operational challenges for health
 - Python (pandas, matplotlib)
 - Excel
 
+## Dataset
+This project uses a mock healthcare claims dataset created for analytical purposes. The data simulates common payer types, denial reasons, appeal activity, and reimbursement outcomes while excluding any real patient or PHI information.
