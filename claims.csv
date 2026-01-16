@@ -1,1 +1,11 @@
 claim_id,patient_id,payer,service_date,submission_date,denial_date,claim_amount,paid_amount,denial_reason,claim_status,appeal_submitted,appeal_outcome
+CLM001,P001,Aetna,2024-01-05,2024-01-08,2024-01-20,1200,0,Missing authorization,Denied,Y,Approved
+CLM002,P002,UnitedHealthcare,2024-01-07,2024-01-10,,850,850,,Paid,N,
+CLM003,P003,Blue Cross,2024-01-10,2024-01-13,2024-01-25,2300,0,Medical necessity,Denied,Y,Denied
+CLM004,P004,Cigna,2024-01-12,2024-01-15,,640,640,,Paid,N,
+CLM005,P005,Aetna,2024-01-15,2024-01-18,2024-01-30,1500,0,Coding error,Denied,N,
+CLM006,P006,UnitedHealthcare,2024-01-18,2024-01-21,2024-02-02,980,0,Eligibility issue,Denied,Y,Approved
+CLM007,P007,Blue Cross,2024-01-20,2024-01-23,,400,400,,Paid,N,
+CLM008,P008,Cigna,2024-01-22,2024-01-25,2024-02-05,1750,0,Timely filing,Denied,N,
+CLM009,P009,Aetna,2024-01-25,2024-01-28,,2200,2200,,Paid,N,
+CLM010,P010,UnitedHealthcare,2024-01-28,2024-01-31,2024-02-12,1100,0,Missing authorization,Denied,Y,Approved
