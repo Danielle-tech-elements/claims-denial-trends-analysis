@@ -1,3 +1,13 @@
-# claims-denial-trends-analysis
-Analysis of healthcare claim denial trends to identify root causes, financial impact, and opportunities to improve reimbursement.
-This project analyzes healthcare claim denials to identify the most common denial reasons, payer-specific trends, and financial impact. The goal is to provide actionable insights that can reduce denial rates and improve reimbursement efficiency.
+# Claims Denial Trends Analysis
+
+## Overview
+This project analyzes healthcare claim denial trends to identify common denial reasons, payer-specific patterns, and financial impact. The goal is to provide actionable insights that can help reduce denial rates and improve reimbursement outcomes.
+
+## Business Problem
+Claim denials create significant financial and operational challenges for healthcare organizations. Understanding why claims are denied and which factors drive the highest denial rates is essential for improving revenue cycle performance.
+
+## Tools (Planned)
+- SQL
+- Python (pandas, matplotlib)
+- Excel
+
