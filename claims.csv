@@ -1,0 +1,1 @@
+claim_id,patient_id,payer,service_date,submission_date,denial_date,claim_amount,paid_amount,denial_reason,claim_status,appeal_submitted,appeal_outcome
