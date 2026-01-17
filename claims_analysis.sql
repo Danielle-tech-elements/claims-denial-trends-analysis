@@ -43,3 +43,39 @@ WHERE claim_status = 'Denied'
 GROUP BY denial_reason
 ORDER BY denial_count DESC;
 
+
+-- Total dollar amount denied
+SELECT 
+  SUM(claim_amount) AS total_denied_amount
+FROM claims
+WHERE claim_status = 'Denied';
+
+
+-- Denied dollar amount by payer
+SELECT 
+  payer,
+  SUM(claim_amount) AS denied_amount
+FROM claims
+WHERE claim_status = 'Denied'
+GROUP BY payer
+ORDER BY denied_amount DESC;
+
+
+-- Appeal volume and success rate
+SELECT
+  appeal_submitted,
+  COUNT(*) AS claim_count
+FROM claims
+WHERE claim_status = 'Denied'
+GROUP BY appeal_submitted;
+
+
+-- Appeal success rate
+SELECT
+  ROUND(
+    SUM(CASE WHEN appeal_outcome = 'Approved' THEN 1 ELSE 0 END) * 1.0
+    / COUNT(*) * 100,
+    2
+  ) AS appeal_success_rate_percent
+FROM claims
+WHERE appeal_submitted = 'Y';
